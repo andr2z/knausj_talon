@@ -27,8 +27,8 @@ class AppActions:
     def window_hide_others():
         actions.key('cmd-alt-h')
     def window_next():
-        actions.key('cmd-`')
+        actions.key('cmd->')
     def window_open():
         actions.key('cmd-n')
     def window_previous():
-        actions.key('cmd-shift-`')
+        actions.key('cmd-<')

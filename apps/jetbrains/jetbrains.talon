@@ -5,6 +5,7 @@ tag(): user.line_commands
 tag(): user.multiple_cursors
 tag(): user.splits
 tag(): user.tabs
+tag(): user.acejump
 # multiple_cursors.py support end
 
 # Auto complete

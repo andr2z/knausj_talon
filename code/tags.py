@@ -14,6 +14,8 @@ tagList = [
     "taskwarrior",  # commandline tag for taskwarrior commands
     "tmux",
     "windbg",
+    "tridactyl_mac",
+    "acejump"
 ]
 for entry in tagList:
     mod.tag(entry, f"tag to load {entry} and/or related plugins ")

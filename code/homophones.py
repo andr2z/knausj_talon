@@ -14,7 +14,7 @@ homophones_file = os.path.join(cwd, "homophones.csv")
 # if quick_replace, then when a word is selected and only one homophone exists,
 # replace it without bringing up the options
 quick_replace = True
-show_help = False
+show_help = True
 ########################################################################
 
 ctx = Context()

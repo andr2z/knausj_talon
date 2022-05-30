@@ -36,6 +36,21 @@ class MacActions:
     def desktop_show():
         actions.key("ctrl-up")
 
+    def desktop_one():
+        actions.key("ctrl-1")
+
+    def desktop_two():
+        actions.key("ctrl-2")
+
+    def desktop_three():
+        actions.key("ctrl-3")
+
+    def desktop_four():
+        actions.key("ctrl-4")
+
+    def desktop_fivev():
+        actions.key("ctrl-5")
+
     def window_move_desktop_left():
         with _drag_window_mac():
             actions.key("ctrl-cmd-alt-left")

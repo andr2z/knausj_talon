@@ -1,5 +1,6 @@
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
 app: jetbrains
+# Here is a mapping between action descriptions and action names: https://github.com/JetBrains/intellij-community/blob/master/platform/platform-resources-en/src/messages/ActionsBundle.properties
 -
 tag(): user.line_commands
 tag(): user.multiple_cursors
@@ -251,3 +252,5 @@ go camel right: user.camel_right()
 
 # requires plug-in: black-pycharm
 blacken: user.idea("action BLACKReformatCode")
+
+context: user.idea("action ShowIntentionActions")

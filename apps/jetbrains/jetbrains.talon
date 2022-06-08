@@ -61,6 +61,11 @@ find (everywhere | all) <user.text> [over]:
     insert(text)
     key("enter")
 recent: user.idea("action RecentFiles")
+(search | find) any: user.idea("action FindInPath")
+(search | find) any <user.text>:
+    user.idea("action FindInPath")
+    sleep(500ms)
+    insert(text)
 
 surround [this] with <user.text> [over]:
     idea("action SurroundWith")
@@ -140,7 +145,7 @@ toggle project: user.idea("action ActivateProjectToolWindow")
 toggle find: user.idea("action ActivateFindToolWindow")
 toggle run: user.idea("action ActivateRunToolWindow")
 toggle debug: user.idea("action ActivateDebugToolWindow")
-toggle events: user.idea("action ActivateEventLogToolWindow")
+toggle events: user.idea("action ActivateNotificationsToolWindow")
 toggle terminal: user.idea("action ActivateTerminalToolWindow")
 toggle git: user.idea("action ActivateVersionControlToolWindow")
 toggle structure: user.idea("action ActivateStructureToolWindow")
@@ -151,6 +156,7 @@ toggle to do: user.idea("action ActivateTODOToolWindow")
 toggle docker: user.idea("action ActivateDockerToolWindow")
 toggle favorites: user.idea("action ActivateFavoritesToolWindow")
 toggle last: user.idea("action JumpToLastWindow")
+toggle commit: user.idea("action ActivateCommitToolWindow")
 # Pin/dock/float
 toggle pinned: user.idea("action TogglePinnedMode")
 toggle docked: user.idea("action ToggleDockMode")
@@ -249,6 +255,8 @@ select camel left: user.extend_camel_left()
 select camel right: user.extend_camel_right()
 go camel left: user.camel_left()
 go camel right: user.camel_right()
+
+view in project: user.idea("action SelectInProjectView")
 
 # requires plug-in: black-pycharm
 blacken: user.idea("action BLACKReformatCode")

@@ -13,3 +13,9 @@ press <user.keys>: key(keys)
 
 vimac:
     key('alt-space')
+
+# sleep on/off
+key(alt-shift-cmd-.): speech.toggle()
+
+# dictation on/off
+key(alt-shift-cmd-,):

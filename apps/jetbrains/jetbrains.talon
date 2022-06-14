@@ -7,6 +7,7 @@ tag(): user.multiple_cursors
 tag(): user.splits
 tag(): user.tabs
 tag(): user.acejump
+tag(): user.angularswitch
 # multiple_cursors.py support end
 
 # Auto complete
@@ -262,3 +263,5 @@ view in project: user.idea("action SelectInProjectView")
 blacken: user.idea("action BLACKReformatCode")
 
 context: user.idea("action ShowIntentionActions")
+
+# requires plug-in:

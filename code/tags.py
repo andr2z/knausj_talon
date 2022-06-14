@@ -15,7 +15,8 @@ tagList = [
     "tmux",
     "windbg",
     "tridactyl_mac",
-    "acejump"
+    "acejump",
+    "angularswitch",
 ]
 for entry in tagList:
     mod.tag(entry, f"tag to load {entry} and/or related plugins ")
